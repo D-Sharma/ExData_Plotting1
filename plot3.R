@@ -15,7 +15,7 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 sub <- subset(data, Date == "2007-02-01" | Date == "2007-02-02")
 
 #Using a png file device, plot the graph on png file
-png(file = "plot3.png", bg = "transparent", width = 480, height = 480)
+png(file = "plot3.png", bg = "white", width = 480, height = 480)
 
 #Get min and max range for y axis
 yrange <- range(c(sub$Sub_metering_1, sub$Sub_metering_2, sub$Sub_metering_3), na.rm = T)

@@ -18,13 +18,13 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 #Subset data for first 2 days of february 2007 i.e.2007-02-01 and 2007-02-02
 sub <- subset(data, Date == "2007-02-01" | Date == "2007-02-02")
 
-png(file = "plot4.png", bg = "transparent", width = 480, height = 480)
+png(file = "plot4.png", bg = "white", width = 480, height = 480)
 
 #------------------------------
 #Step 2: Plot multiple graphs
 #------------------------------
 
-par(mfcol = c(2,2), mar = c(5.1,5.1,1,1))
+par(mfcol = c(2,2))
 
 #Graph 1 - Global active power
 #-------------------------------
